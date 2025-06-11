@@ -11,7 +11,9 @@ n = 50;
 x = linspace(0, 100, n);
 y = linspace(-25, 25, n);
 [X, Y] = meshgrid(x, y);
-Z = 50 + 10*sin(0.1*X) + 5*cos(0.1*Y);  % Seabed depth simulation (make the seafloor wavy with sine/cosine)
+
+% Seabed depth simulation (make the seafloor wavy with sine/cosine)
+Z = 50 + 10*sin(0.1*X) + 5*cos(0.1*Y);
 
 % Add some noise (make it realistic by simulating measurement noise)
 Z = Z + randn(size(Z));
@@ -19,14 +21,10 @@ Z = Z + randn(size(Z));
 % Plot depth (show the 3D seabed so we can see the terrain)
 figure;
 surf(X, Y, Z);
-xlabel('Forward (m)'); ylabel('Beam Width (m)'); zlabel('Depth (m)');
+xlabel('Forward (m)');
+ylabel('Beam Width (m)');
+zlabel('Depth (m)');
 title('Simulated Bathymetry');
 
 % Save the current figure as a PNG file
 saveas(gcf, 'SonarImage.png');
-![Sonar Image](SonarImage.png)
-![SonarImage](https://github.com/user-attachments/assets/160a7fe5-14d2-4af6-a9c1-6f64bffe09c7)
-
-git add SonarImage.png
-git commit -m "Add sonar image"
-git push
