@@ -25,3 +25,7 @@ title('Simulated Bathymetry');
 % Save the current figure as a PNG file
 saveas(gcf, 'SonarImage.png');
 ![Sonar Image](SonarImage.png)
+
+git add SonarImage.png
+git commit -m "Add sonar image"
+git push
