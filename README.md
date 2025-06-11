@@ -25,3 +25,4 @@ title('Simulated Bathymetry');
 % Save the current figure as a PNG file
 saveas(gcf, 'SonarImage.png');
 ![Sonar Image](SonarImage.png)
+![SonarImage](https://github.com/user-attachments/assets/160a7fe5-14d2-4af6-a9c1-6f64bffe09c7)
