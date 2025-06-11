@@ -23,4 +23,4 @@ xlabel('Forward (m)'); ylabel('Beam Width (m)'); zlabel('Depth (m)');
 title('Simulated Bathymetry');
 
 % Save the current figure as a PNG file
-saveas(gcf, 'SonarImage.fig');
+saveas(gcf, 'SonarImage.png');
