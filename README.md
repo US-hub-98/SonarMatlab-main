@@ -24,9 +24,7 @@ surf(X, Y, Z);
 xlabel('Forward (m)');
 ylabel('Beam Width (m)');
 zlabel('Depth (m)');
-title('Simulated![SonarImage](https://github.com/user-attachments/assets/5c1ac815-981d-46a2-a1ea-60f70a291797)
- Bathymetry');
+title('Simulated Bathymetry');
 
 % Save the current figure as a PNG file
 saveas(gcf, 'SonarImage.png');
-![Uploading SonarImage.png…]()
